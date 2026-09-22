@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notre équipe — MEDICA Pôle Santé</title>
+<meta name="description" content="L'équipe médicale et paramédicale des maisons médicales Pôle Santé à Jette et Molenbeek : médecins généralistes, kinésithérapeutes, infirmiers.">
+<link rel="stylesheet" href="../03-design-system.css?v=5">
+<link rel="stylesheet" href="site.css?v=5">
+</head>
+<body>
+
+<header class="entete">
+  <div class="conteneur">
+    <a class="entete__marque" href="index.html">
+      <img class="entete__logo" src="../logo%20pole%20sant%C3%A9-Q.jpg" width="44" height="44" alt="Logo MEDICA : croix rouge et carré bleu">
+      <span class="entete__nom">Maison médicale<small>Pôle Santé</small></span>
+    </a>
+
+    <nav class="entete__nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Nos services</a>
+      <a href="equipe.html" aria-current="page">Notre équipe</a>
+      <a href="contact.html">Infos &amp; Contact</a>
+    </nav>
+
+    <button class="entete__bascule" type="button" aria-expanded="false" aria-controls="nav-mobile" id="bouton-menu">
+      <span aria-hidden="true">☰</span>
+      <span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Ouvrir le menu</span>
+    </button>
+  </div>
+
+  <nav class="entete__nav-mobile" id="nav-mobile" aria-label="Navigation mobile" hidden>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Nos services</a>
+    <a href="equipe.html" aria-current="page">Notre équipe</a>
+    <a href="contact.html">Infos &amp; Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="bandeau">
+    <div class="conteneur">
+      <h1>Notre équipe</h1>
+      <p>Médecins, kinésithérapeutes et infirmiers de nos deux centres.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <h2>Pôle santé Jette</h2>
+      <div class="grille-equipe" style="margin-bottom:var(--esp-6);">
+        <article class="carte-membre carte-membre--jette">
+          <div class="carte-membre__photo-zone">
+            <span class="carte-membre__badge">Pôle santé Jette</span>
+            <img class="carte-membre__photo" src="assets/icone-medecin-femme.png" alt="Illustration médecin généraliste">
+          </div>
+          <div class="carte-membre__corps">
+            <p class="role">Médecin généraliste</p>
+            <p class="centre">100&nbsp;% couvert au forfait</p>
+          </div>
+        </article>
+
+        <article class="carte-membre carte-membre--jette">
+          <div class="carte-membre__photo-zone">
+            <span class="carte-membre__badge">Pôle santé Jette</span>
+            <img class="carte-membre__photo" src="assets/icone-kine.png" alt="Illustration kinésithérapeute">
+          </div>
+          <div class="carte-membre__corps">
+            <p class="role">Kinésithérapeute</p>
+            <p class="centre">100&nbsp;% couvert au forfait</p>
+          </div>
+        </article>
+
+        <article class="carte-membre carte-membre--jette">
+          <div class="carte-membre__photo-zone">
+            <span class="carte-membre__badge">Pôle santé Jette</span>
+            <img class="carte-membre__photo" src="assets/icone-infirmier.png" alt="Illustration infirmier / infirmière">
+          </div>
+          <div class="carte-membre__corps">
+            <p class="role">Infirmier / Infirmière</p>
+            <p class="centre">100&nbsp;% couvert au forfait</p>
+          </div>
+        </article>
+      </div>
+
+      <h2>Pôle santé Molenbeek</h2>
+      <div class="grille-equipe">
+        <article class="carte-membre carte-membre--molenbeek">
+          <div class="carte-membre__photo-zone">
+            <span class="carte-membre__badge">Pôle santé Molenbeek</span>
+            <img class="carte-membre__photo" src="assets/icone-medecin-homme.png" alt="Illustration médecin généraliste">
+          </div>
+          <div class="carte-membre__corps">
+            <p class="role">Médecin généraliste</p>
+            <p class="centre">100&nbsp;% couvert au forfait</p>
+          </div>
+        </article>
+
+        <article class="carte-membre carte-membre--molenbeek">
+          <div class="carte-membre__photo-zone">
+            <span class="carte-membre__badge">Pôle santé Molenbeek</span>
+            <img class="carte-membre__photo" src="assets/icone-kine.png" alt="Illustration kinésithérapeute">
+          </div>
+          <div class="carte-membre__corps">
+            <p class="role">Kinésithérapeute</p>
+            <p class="centre">100&nbsp;% couvert au forfait</p>
+          </div>
+        </article>
+
+        <article class="carte-membre carte-membre--molenbeek">
+          <div class="carte-membre__photo-zone">
+            <span class="carte-membre__badge">Pôle santé Molenbeek</span>
+            <img class="carte-membre__photo" src="assets/icone-infirmier.png" alt="Illustration infirmier / infirmière">
+          </div>
+          <div class="carte-membre__corps">
+            <p class="role">Infirmier / Infirmière</p>
+            <p class="centre">100&nbsp;% couvert au forfait</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied__grille">
+      <div>
+        <h3 style="color:var(--accent-texte);">MEDICA</h3>
+        <p>Maison médicale Pôle Santé — Jette &amp; Molenbeek-Saint-Jean (Bruxelles).</p>
+      </div>
+      <div>
+        <h3 style="color:var(--accent-texte);">Navigation</h3>
+        <p>
+          <a href="index.html">Accueil</a><br>
+          <a href="services.html">Nos services</a><br>
+          <a href="contact.html">Infos &amp; Contact</a>
+        </p>
+      </div>
+      <div class="pied__urgence">
+        <p style="margin:0 0 var(--esp-2);"><strong>Urgences vitales (ambulance)&nbsp;: appelez le 112</strong></p>
+        <p style="margin:0 0 var(--esp-1);">Garde médicale (nuit/week-end)&nbsp;: numéro unique 1733</p>
+        <p style="margin:0;">Centre antipoison&nbsp;: 070 245 245</p>
+      </div>
+    </div>
+    <p class="pied__bas">© 2026 MEDICA — Maison médicale Pôle Santé (Jette &amp; Molenbeek). Tous droits réservés. · <a href="mentions-legales.html">Mentions légales &amp; RGPD</a></p>
+  </div>
+</footer>
+
+<script>
+  const boutonMenu = document.getElementById('bouton-menu');
+  const navMobile = document.getElementById('nav-mobile');
+  boutonMenu.addEventListener('click', () => {
+    const ouvert = boutonMenu.getAttribute('aria-expanded') === 'true';
+    boutonMenu.setAttribute('aria-expanded', String(!ouvert));
+    navMobile.hidden = ouvert;
+  });
+</script>
+
+</body>
+</html>

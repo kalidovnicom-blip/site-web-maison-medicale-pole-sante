@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEDICA — Maison médicale Pôle Santé | Jette &amp; Molenbeek</title>
+<meta name="description" content="Maison médicale au forfait, conventionnée INAMI, à Jette et Molenbeek. Médecine générale, kinésithérapie, soins infirmiers et prises de sang, sans rendez-vous, sans frais à l'acte.">
+<link rel="stylesheet" href="../03-design-system.css?v=5">
+<link rel="stylesheet" href="site.css?v=5">
+</head>
+<body>
+
+<header class="entete">
+  <div class="conteneur">
+    <a class="entete__marque" href="index.html">
+      <img class="entete__logo" src="../logo%20pole%20sant%C3%A9-Q.jpg" width="44" height="44" alt="Logo MEDICA : croix rouge et carré bleu">
+      <span class="entete__nom">Maison médicale<small>Pôle Santé</small></span>
+    </a>
+
+    <nav class="entete__nav" aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="services.html">Nos services</a>
+      <a href="equipe.html">Notre équipe</a>
+      <a href="contact.html">Infos &amp; Contact</a>
+    </nav>
+
+    <button class="entete__bascule" type="button" aria-expanded="false" aria-controls="nav-mobile" id="bouton-menu">
+      <span aria-hidden="true">☰</span>
+      <span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Ouvrir le menu</span>
+    </button>
+  </div>
+
+  <nav class="entete__nav-mobile" id="nav-mobile" aria-label="Navigation mobile" hidden>
+    <a href="index.html" aria-current="page">Accueil</a>
+    <a href="services.html">Nos services</a>
+    <a href="equipe.html">Notre équipe</a>
+    <a href="contact.html">Infos &amp; Contact</a>
+  </nav>
+</header>
+
+<main id="accueil">
+
+  <section class="hero">
+    <div class="conteneur">
+      <div>
+        <div class="hero__logo">
+          <img src="../logo%20pole%20sant%C3%A9-Q.jpg" alt="Logo MEDICA : croix rouge et carré bleu" width="180" height="180">
+        </div>
+
+        <h1>Pôle santé — Est votre maison médicale sans rendez-vous et sans frais à payer.</h1>
+
+        <p>
+          Deux maisons médicales modernes à Jette (Av. Guillaume De Greef 39)
+          et au Boulevard Louis Mettewie 67, à Molenbeek-Saint-Jean. Médecine
+          générale, kinésithérapie, soins infirmiers et prises de sang
+          quotidiennes, intégralement pris en charge pour les patients
+          inscrits au forfait.
+        </p>
+
+        <div class="hero__actions">
+          <a class="bouton bouton-primaire" href="contact.html">Trouver mon centre</a>
+          <a class="bouton bouton-secondaire" href="#forfait" style="border-color:var(--accent-texte); color:var(--accent-texte);">Comment ça marche&nbsp;?</a>
+        </div>
+      </div>
+
+      <div class="hero__visuel">
+        <div class="hero__visuel-cadre">
+          <img src="assets/equipe-hero.png" alt="Équipe de praticiens MEDICA (médecins et personnel paramédical)" width="640" height="480" loading="eager">
+          <span class="hero__etiquette">Sans rendez-vous</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="videos">
+    <div class="conteneur">
+      <div class="section__entete">
+        <h2>Découvrez nos deux centres</h2>
+        <p>Une courte vidéo de présentation pour chaque maison médicale.</p>
+      </div>
+
+      <div class="grille-videos">
+        <article class="carte-video">
+          <h3>Pôle santé Jette</h3>
+          <div class="video-cadre">
+            <video id="video-jette" controls preload="none" poster="assets/affiche-jette.jpg" width="640" height="360">
+              <source src="assets/video-jette.mp4" type="video/mp4">
+              Votre navigateur ne prend pas en charge la lecture vidéo.
+            </video>
+            <button class="video-cadre__lecture" type="button" aria-label="Lire la vidéo du Pôle santé Jette" data-cible="video-jette">▶</button>
+          </div>
+        </article>
+
+        <article class="carte-video">
+          <h3>Pôle santé Molenbeek</h3>
+          <div class="video-cadre">
+            <video controls preload="none" poster="assets/affiche-mettewie.jpg" width="640" height="360">
+              <source src="assets/video-mettewie.mp4" type="video/mp4">
+              Votre navigateur ne prend pas en charge la lecture vidéo.
+            </video>
+          </div>
+          <p class="marqueur-a-verifier">[À AJOUTER : vidéo de présentation du Pôle santé Molenbeek — déposer <code>assets/video-mettewie.mp4</code> et une image <code>assets/affiche-mettewie.jpg</code>]</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="forfait">
+    <div class="conteneur">
+      <div class="section__entete">
+        <h2>Le forfait, en bref</h2>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>Qu'est-ce qu'une maison médicale au forfait&nbsp;? Est-ce vraiment 0&nbsp;€&nbsp;?</summary>
+          <p>
+            Oui, c'est gratuit à la consultation pour les patients inscrits.
+            Le système au forfait est un accord conventionné entre l'INAMI,
+            votre mutuelle belge et notre maison médicale&nbsp;: vous n'avez
+            donc rien à débourser lors de vos visites chez le médecin
+            généraliste, le kinésithérapeute ou l'infirmier du centre.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="apercu-centres">
+    <div class="conteneur">
+      <div class="section__entete">
+        <h2>Nos deux centres</h2>
+        <p>Adresses, horaires, transport en commun et parking sont détaillés sur <a href="contact.html">Infos &amp; Contact</a>.</p>
+      </div>
+
+      <div class="grille-centres">
+        <article class="carte-centre">
+          <h3>Pôle santé Jette</h3>
+          <ul class="carte-centre__liste">
+            <li>📍 Av. Guillaume De Greef 39, 1090 Jette</li>
+            <li>🩸 Prises de sang : 9h00 – 18h00 — sans rendez-vous</li>
+          </ul>
+          <div class="carte-centre__actions">
+            <a class="bouton bouton-secondaire" href="contact.html">Voir les infos pratiques</a>
+          </div>
+        </article>
+
+        <article class="carte-centre">
+          <h3>Pôle santé Molenbeek</h3>
+          <ul class="carte-centre__liste">
+            <li>📍 Boulevard Louis Mettewie 67, 1080 Molenbeek-Saint-Jean</li>
+            <li>🩸 Prises de sang : 9h00 – 18h00 — sans rendez-vous</li>
+          </ul>
+          <div class="carte-centre__actions">
+            <a class="bouton bouton-secondaire" href="contact.html">Voir les infos pratiques</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied__grille">
+      <div>
+        <h3 style="color:var(--accent-texte);">MEDICA</h3>
+        <p>Maison médicale Pôle Santé — Jette &amp; Molenbeek-Saint-Jean (Bruxelles).</p>
+      </div>
+      <div>
+        <h3 style="color:var(--accent-texte);">Navigation</h3>
+        <p>
+          <a href="services.html">Nos services</a><br>
+          <a href="equipe.html">Notre équipe</a><br>
+          <a href="contact.html">Infos &amp; Contact</a>
+        </p>
+      </div>
+      <div class="pied__urgence">
+        <p style="margin:0 0 var(--esp-2);"><strong>Urgences vitales (ambulance)&nbsp;: appelez le 112</strong></p>
+        <p style="margin:0 0 var(--esp-1);">Garde médicale (nuit/week-end)&nbsp;: numéro unique 1733</p>
+        <p style="margin:0;">Centre antipoison&nbsp;: 070 245 245</p>
+      </div>
+    </div>
+
+    <p class="pied__bas">© 2026 MEDICA — Maison médicale Pôle Santé (Jette &amp; Molenbeek). Tous droits réservés. Contenu de cette page à valider avant mise en ligne — voir <code>01-brief.md</code>. · <a href="mentions-legales.html">Mentions légales &amp; RGPD</a></p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.video-cadre__lecture').forEach((bouton) => {
+    const video = document.getElementById(bouton.dataset.cible);
+    if (!video) return;
+    bouton.addEventListener('click', () => video.play());
+    video.addEventListener('play', () => { bouton.hidden = true; });
+    video.addEventListener('pause', () => { bouton.hidden = false; });
+    video.addEventListener('ended', () => { bouton.hidden = false; });
+  });
+
+  const boutonMenu = document.getElementById('bouton-menu');
+  const navMobile = document.getElementById('nav-mobile');
+  boutonMenu.addEventListener('click', () => {
+    const ouvert = boutonMenu.getAttribute('aria-expanded') === 'true';
+    boutonMenu.setAttribute('aria-expanded', String(!ouvert));
+    navMobile.hidden = ouvert;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mentions légales &amp; RGPD — MEDICA Pôle Santé</title>
+<meta name="description" content="Mentions légales, protection des données et droits du patient pour les maisons médicales Pôle Santé.">
+<link rel="stylesheet" href="../03-design-system.css?v=5">
+<link rel="stylesheet" href="site.css?v=5">
+</head>
+<body>
+
+<header class="entete">
+  <div class="conteneur">
+    <a class="entete__marque" href="index.html">
+      <img class="entete__logo" src="../logo%20pole%20sant%C3%A9-Q.jpg" width="44" height="44" alt="Logo MEDICA : croix rouge et carré bleu">
+      <span class="entete__nom">Maison médicale<small>Pôle Santé</small></span>
+    </a>
+
+    <nav class="entete__nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Nos services</a>
+      <a href="equipe.html">Notre équipe</a>
+      <a href="contact.html">Infos &amp; Contact</a>
+    </nav>
+
+    <button class="entete__bascule" type="button" aria-expanded="false" aria-controls="nav-mobile" id="bouton-menu">
+      <span aria-hidden="true">☰</span>
+      <span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Ouvrir le menu</span>
+    </button>
+  </div>
+
+  <nav class="entete__nav-mobile" id="nav-mobile" aria-label="Navigation mobile" hidden>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Nos services</a>
+    <a href="equipe.html">Notre équipe</a>
+    <a href="contact.html">Infos &amp; Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="bandeau">
+    <div class="conteneur">
+      <h1>Mentions légales &amp; protection des données (RGPD)</h1>
+      <p>Cette page n'apparaît pas dans le menu principal — elle reste accessible depuis le pied de page de chaque page, comme l'exige la loi.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+
+      <article class="service-detail">
+        <div class="service-detail__entete">
+          <h2>Mentions légales</h2>
+        </div>
+        <ul class="conditions" style="padding-left:0; list-style:none; color:var(--texte);">
+          <li>Dénomination sociale&nbsp;: MEDICA Maison Médicale Pôle Santé A.S.B.L.</li>
+          <li>Numéro d'entreprise (BCE)&nbsp;: BE 1027.421.426</li>
+          <li>Siège social&nbsp;: Boulevard Louis Mettewie 67, 1080 Molenbeek-Saint-Jean</li>
+          <li>Directrice de publication&nbsp;: MEDICA Pôle santé</li>
+          <li>Hébergeur&nbsp;: connexion sécurisée SSL</li>
+        </ul>
+      </article>
+
+      <article class="service-detail">
+        <div class="service-detail__entete">
+          <h2>Protection des données</h2>
+        </div>
+        <p>
+          La gestion des dossiers patients se fait exclusivement via des
+          logiciels médicaux cryptés.
+        </p>
+      </article>
+
+      <article class="service-detail">
+        <div class="service-detail__entete">
+          <h2>Droits du patient</h2>
+        </div>
+        <ul class="conditions" style="padding-left:0; list-style:none; color:var(--texte);">
+          <li>Droit d'accès, de rectification et de suppression de vos données.</li>
+          <li>Durée légale de conservation du dossier médical&nbsp;: <strong>30 ans</strong> à compter du dernier contact.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied__grille">
+      <div>
+        <h3 style="color:var(--accent-texte);">MEDICA</h3>
+        <p>Maison médicale Pôle Santé — Jette &amp; Molenbeek-Saint-Jean (Bruxelles).</p>
+      </div>
+      <div>
+        <h3 style="color:var(--accent-texte);">Navigation</h3>
+        <p>
+          <a href="index.html">Accueil</a><br>
+          <a href="services.html">Nos services</a><br>
+          <a href="equipe.html">Notre équipe</a><br>
+          <a href="contact.html">Infos &amp; Contact</a>
+        </p>
+      </div>
+      <div class="pied__urgence">
+        <p style="margin:0 0 var(--esp-2);"><strong>Urgences vitales (ambulance)&nbsp;: appelez le 112</strong></p>
+        <p style="margin:0 0 var(--esp-1);">Garde médicale (nuit/week-end)&nbsp;: numéro unique 1733</p>
+        <p style="margin:0;">Centre antipoison&nbsp;: 070 245 245</p>
+      </div>
+    </div>
+    <p class="pied__bas">
+      © 2026 MEDICA — Maison médicale Pôle Santé (Jette &amp; Molenbeek). Tous droits réservés.
+      · <a href="mentions-legales.html">Mentions légales &amp; RGPD</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  const boutonMenu = document.getElementById('bouton-menu');
+  const navMobile = document.getElementById('nav-mobile');
+  boutonMenu.addEventListener('click', () => {
+    const ouvert = boutonMenu.getAttribute('aria-expanded') === 'true';
+    boutonMenu.setAttribute('aria-expanded', String(!ouvert));
+    navMobile.hidden = ouvert;
+  });
+</script>
+
+</body>
+</html>
