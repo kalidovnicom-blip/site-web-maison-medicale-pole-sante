@@ -1,0 +1,21 @@
+Déposez ici, avec exactement ces noms de fichier :
+
+- equipe-hero.png   → la photo/illustration du groupe de praticiens
+                       (affichée à droite du texte sur l'accueil)
+- video-jette.mp4 + affiche-jette.jpg
+- video-mettewie.mp4 + affiche-mettewie.jpg
+- hero-fond-desktop.jpg → photo de fond du bandeau bleu de l'accueil,
+                       version large écran (format paysage, ex. 1920×800)
+- hero-fond-mobile.jpg  → même photo, recadrée en format portrait
+                       pour les écrans de téléphone (ex. 800×1200)
+- icone-medecin-femme.png → illustration médecin généraliste (Pôle Jette)
+- icone-medecin-homme.png → illustration médecin généraliste (Pôle Molenbeek)
+- icone-kine.png          → illustration kinésithérapeute (les deux centres)
+- icone-infirmier.png     → illustration infirmier/infirmière (les deux centres)
+                       (page Notre équipe — ce sont des illustrations
+                       génériques, pas des photos réelles des praticiens,
+                       donc pas besoin d'accord individuel pour publication)
+
+Il suffit de glisser le fichier ici depuis le Finder, avec le bon nom.
+Rien d'autre à faire : la page les affichera automatiquement au
+prochain chargement.
